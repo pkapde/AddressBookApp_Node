@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+}
+
+.maincontainer {
+    height: 100vh;
+    width: 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #859796;
+  background-image: linear-gradient(45deg,#9fb8b6,#93a89a);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ul.topnav lii {
+    float: left;
+}
+.add-welcometext {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #42515f;
+    text-transform: capitalize;
+  }
+.add-text {
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+  }
+  .add-effect {
+    color: #42515f;
+  }
+ul.topnav lii a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 13px 17px;
+    text-decoration: none;
+    font: 15px Arial, sans-serif;
+    height: 45px;
+    align-items: center;
+}
+ul.topnav li {
+    float: right;
+}
+
+.topnav a:hover {
+    color: #63738a;
+}
+
+ul.topnav li a {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    padding: 13px 17px;
+    text-decoration: none;
+    font: 15px Arial, sans-serif;
+    height: 45px;
+    align-items: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    background-color: #859796;
+  background-image: linear-gradient(45deg,#9fb8b6,#93a89a);
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidenav a {
+    padding: 12px 10px 14px 32px;
+    text-decoration: none;
+    font: 20px Arial, sans-serif;
+    color: black;
+    display: flex;
+}
+
+.sidenav a:hover {
+    color: whitesmoke;
+}
+
+.main {
+    margin-left: 200px;
+}
+
+.sidenav-menuspan {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa:before {
+    content: "\f03a";
+    padding: 10px;
+}
+
+div.card {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    text-align: center;
+    height: 100px;
+    margin: 20px;
+}
+.welcomeCard {
+    
+    margin-top: 100px;
+    margin-left: 585px;
+}
+.cardcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-flow: row wrap;
+    margin-top: 20px;
+    margin-left: 275px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    margin-left: 35%;
+    height: 450px;
+}
+
+.modeldelete {
+    height: 150px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signupcard {
+    width: 500px;
+    height: 625px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    justify-content: center;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 30%);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.formtitle {
+    color: #636363;
+    font-size: 2rem;
+    font: 23px Roboto, sans-serif;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.headercontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -15px;
+    margin-top: -32px;
+}
+
+#backline {
+    display: flex;
+    height: 3px;
+    width: 30%;
+    background-color: #d4d4d4
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    margin-left: -11px;
+    padding: 6px 12px;
+    margin-right: -27px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: 15px Arial, sans-serif;
+    margin-bottom: 9px;
+}
+
+error-output {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: roboto;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+.textarea {
+    width: 100%;
+    height: 18px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: 15px Arial, sans-serif;
+}
+
+select {
+    width: 53%;
+    padding: 7px;
+    height: 37px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: 15px Arial, sans-serif;
+    color: dimgray;
+}
+
+.aligninput {
+    width: 40%;
+}
+
+.btn {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+}
+
+.error-content {
+    display: flex;
+    margin-top: -23px;
+    padding: 2px 4px;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
